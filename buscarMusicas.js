@@ -1,3 +1,4 @@
+
 // Função para remover acentos das strings
 function removeAcentos(str) {
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
@@ -60,3 +61,9 @@ $(document).ready(function() {
         }
     });
 });
+
+    // Limpa o campo de pesquisa quando a página é carregada
+    window.onload = function() {
+        document.getElementById("searchInput").value = ""
+    };
+
