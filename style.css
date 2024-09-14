@@ -89,9 +89,9 @@ table {
 }
 
 th, td {
-    padding: 8px 12px;
+    padding: 6px 10px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 2px solid #dddddddf;
 }
 
 th {
@@ -134,7 +134,8 @@ tr:hover {
 footer {
     background-color: #1E6C93; /* Fundo azul */
     color: white; /* Texto branco */
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     width: 100%; /* Garante que o footer ocupe toda a largura */
     position: fixed; /* Agora é fixo no final da tela */
