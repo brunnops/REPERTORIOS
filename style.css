@@ -14,7 +14,7 @@ html, body {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #212121;
     color: #333;
     margin: 0;
     display: flex;
@@ -23,6 +23,7 @@ body {
 }
 
 #container {
+    padding-top: 20px;
     flex: 1; /* Faz com que o container expanda para ocupar o espaço disponível */
     width: 70%;
     margin: 0 auto;
@@ -35,12 +36,12 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 h1 {
     text-align: center;
-    color: #5DA3FA;
+    color: #1E6C93;
     margin-bottom: 20px;
     font-size: 2rem;
 }
@@ -69,7 +70,7 @@ button {
     width: 100%;
     padding: 12px;
     font-size: 1rem;
-    background-color: #5DA3FA;
+    background-color: #1E6C93;
     color: white;
     border: none;
     border-radius: 5px;
@@ -78,18 +79,22 @@ button {
 }
 
 button:hover {
-    background-color: #4a8bda;
+    background-color: #212121;
 }
 
 th, td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
+    padding: 9px 12px;
+   
     text-align: left;
 }
 
 th {
-    background-color: #004498;
+    background-color: #1E6C93;
     color: white;
+}
+
+tr {
+    background-color: #f9f9f9;
 }
 
 tr:nth-child(even) {
@@ -116,42 +121,15 @@ tr:hover {
 
 /* Footer styling */
 footer {
-    background-color: #004498; /* Fundo azul */
+    background-color: #1E6C93; /* Fundo azul */
     color: white; /* Texto branco */
-    padding: 20px 0;
+    margin-top: 20px;
     text-align: center;
     width: 100%; /* Garante que o footer ocupe toda a largura */
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-    flex-wrap: wrap;
-}
-
-.footer-container p, .footer-container nav {
-    margin: 10px 0;
-}
-
-.footer-container nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.footer-container nav ul li {
-    display: inline;
-}
-
-.footer-container nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-container nav ul li a:hover {
-    text-decoration: underline;
+.footer {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
 }
