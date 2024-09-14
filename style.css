@@ -11,6 +11,7 @@
 html, body {
     height: 100%; /* Faz com que o body e html ocupem toda a altura da página */
     margin: 0;
+    overflow-x: auto; /* Permite rolagem lateral quando necessário */
 }
 
 body {
@@ -27,7 +28,6 @@ body {
     flex: 1; /* Faz com que o container expanda para ocupar o espaço disponível */
     width: 85%; /* Mantém a centralização da tabela */
     margin: 0 auto;
-    overflow-x: auto; /* Permite a rolagem lateral se a tabela for maior */
 }
 
 main {
@@ -91,6 +91,7 @@ table {
 th, td {
     padding: 8px 12px;
     text-align: left;
+    border: 1px solid #ddd;
 }
 
 th {
@@ -136,12 +137,17 @@ footer {
     padding: 10px 0;
     text-align: center;
     width: 100%; /* Garante que o footer ocupe toda a largura */
-    position: relative; /* Posiciona o footer normalmente no fluxo da página */
-    margin-top: auto; /* Garante que o footer fique na parte inferior, mesmo com pouco conteúdo */
+    position: fixed; /* Agora é fixo no final da tela */
+    bottom: 0; /* Gruda o footer no final da tela */
+    left: 0;
 }
 
 .footer {
     text-align: center;
     color: #FFFFFF;
     margin: 0;
+}
+
+#container {
+    margin-bottom: 50px; /* Adiciona um espaço para o conteúdo não ficar sobreposto pelo footer */
 }
