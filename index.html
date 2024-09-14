@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertórios da PIBI</title>
+    <link rel="stylesheet" href="style.css"> <!-- Para um arquivo CSS externo (opcional) -->
+</head>
+<body>
+    <div id="container">
+        <main>
+            <section>
+                <h1>Repertórios da PIBI</h1>
+
+                <p>Este site oferece uma busca abrangente pelo repertório musical ministrado na nossa igreja. Você pode pesquisar pelo nome da música, cantor ou versão, e até filtrar todo o repertório de um ministro específico. Use a barra de pesquisa para encontrar exatamente o que precisa, seja uma música específica ou todo o conjunto de canções ministradas por alguém.</p>
+
+                <input type="text" id="searchInput" placeholder="Digite aqui para pesquisar...">
+                <button onclick="search()">Buscar</button>
+            </section>
+        </main>
+
+        <div id="results"></div>
+    </div>
+
+    <!-- Footer foi movido para fora do container -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Repertórios da PIBI. Todos os direitos reservados.</p>
+            <p>Desenvolvido por [Seu Nome].</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="buscarMusicas.js"></script> <!-- Coloque o arquivo JS separado aqui -->
+</body>
+</html>

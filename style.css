@@ -1,0 +1,157 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Definindo o estilo global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Faz com que o body e html ocupem toda a altura da página */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* O corpo deve ter altura mínima da tela */
+}
+
+#container {
+    flex: 1; /* Faz com que o container expanda para ocupar o espaço disponível */
+    width: 70%;
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #5DA3FA;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #5DA3FA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a8bda;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #004498;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #004498; /* Fundo azul */
+    color: white; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.footer-container p, .footer-container nav {
+    margin: 10px 0;
+}
+
+.footer-container nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-container nav ul li {
+    display: inline;
+}
+
+.footer-container nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container nav ul li a:hover {
+    text-decoration: underline;
+}
