@@ -11,7 +11,7 @@
 html, body {
     height: 100%; /* Faz com que o body e html ocupem toda a altura da página */
     margin: 0;
-    overflow-x: auto; /* Permite rolagem lateral quando necessário */
+    overflow-x: hidden; /* Evita rolagem lateral no body */
 }
 
 body {
@@ -28,6 +28,9 @@ body {
     flex: 1; /* Faz com que o container expanda para ocupar o espaço disponível */
     width: 85%; /* Mantém a centralização da tabela */
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
@@ -83,6 +86,13 @@ button:hover {
     background-color: #212121;
 }
 
+/* Contêiner da tabela com rolagem lateral */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
+    margin-bottom: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -91,6 +101,7 @@ table {
 th, td {
     padding: 8px 12px;
     text-align: left;
+    border: 1px solid #21212154;
 }
 
 th {
@@ -111,7 +122,7 @@ tr:hover {
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 320px) {
     h1 {
         font-size: 1.5rem;
     }
@@ -143,5 +154,5 @@ footer {
 .footer {
     text-align: center;
     color: #FFFFFF;
-    margin: 0;
+    margin: auto;
 }
