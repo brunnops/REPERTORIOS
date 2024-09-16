@@ -1,162 +1,150 @@
-/* Importando a fonte Poppins do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-/* Estilos globais */
-* {
-    box-sizing: border-box;
+/* Definindo layout geral */
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte anterior aplicada */
+    background-color: #1a1a1a;
     margin: 0;
     padding: 0;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden; /* Remove a rolagem do body para controlar na div */
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #212121;
-    color: #333;
+    color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que a altura do body seja pelo menos a altura da tela */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-#container {
-    padding-top: 10px;
-    flex: 1;
-    width: 85%;
-    margin: 0 auto;
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
 }
 
-main {
-    background-color: white;
+/* Caixa centralizada para conteúdo da seção */
+section {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #262626;
+    width: 90%; /* Reduzindo a largura */
+    max-width: 1200px; /* Definindo um tamanho máximo */
+    margin: 0 auto;
+    border-radius: 10px; /* Bordas suaves para a caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 h1 {
-    text-align: center;
-    color: #1E6C93;
+    font-size: 24px;
     margin-bottom: 20px;
-    font-size: 1.8rem;
 }
 
-p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-    text-indent: 30px;
-}
-
+/* Input e botão de busca */
 input[type="text"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    font-size: 1rem;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: none;
     margin-bottom: 15px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    background-color: #1E6C93;
-    color: white;
+    padding: 10px 20px;
+    background-color: #007bff;
     border: none;
+    color: white;
     border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #212121;
+    background-color: #0056b3;
 }
 
-/* Ajuste para a tabela */
+/* Estilizando a tabela de resultados */
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px; /* Adicionando espaço entre a tabela e o rodapé */
+    background-color: #222;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    white-space: nowrap; /* Garante que não haja quebras de linha nas células da tabela */
+    color: white;
 }
 
 th, td {
-    padding: 8px 12px;
+    padding: 15px;
     text-align: left;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
 }
 
 th {
-    background-color: #1E6C93;
+    background-color: #007bff;
     color: white;
 }
 
-tr {
-    background-color: #f9f9f9;
+td {
+    background-color: #333;
+    word-wrap: break-word;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    button {
-        font-size: 0.9rem;
-    }
-
-    th, td {
-        font-size: 0.9rem;
-    }
-}
-
-/* Ajustes de layout */
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* Permite rolagem lateral */
-    padding-bottom: 50px; /* Para não sobrepor o footer */
-}
-
-/* Footer fixo */
+/* Footer fixo no final da página */
 footer {
-    background-color: #1E6C93; /* Fundo azul */
-    color: white;
-    padding: 10px 0;
+    background-color: #007bff;
+    padding: 15px;
     text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: auto;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1000; /* Garante que o footer fique sempre acima de outros elementos */
 }
 
-.footer {
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0;
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"], button {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
 }
 
-#container {
-    margin-bottom: 50px; /* Espaço para o footer */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    input[type="text"], button {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }
