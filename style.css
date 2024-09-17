@@ -40,14 +40,14 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
-    margin: 30px auto 20px;
+    margin: 0 auto 20px;
 }
 
 h1 {
     text-align: center;
     color: #1E6C93;
     margin-bottom: 20px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .PIBI {
@@ -56,36 +56,24 @@ h1 {
 
 .igreja {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 abbr:hover {
     cursor: pointer
 }
 
+a {
+    color: inherit; /* Garante que a cor do texto herde do elemento pai */
+    font-weight: bold; /* Mantém o negrito no texto */
+}
 
-.links:visited {
+a:visited {
     color: inherit; /* Garante que a cor não mude após o clique */
 }
 
-.links {
-    text-decoration: none;
-}
-
-.icon-container {
-    display: flex;
-    gap: 15px;
-    justify-content: center;  /* Centraliza os ícones horizontalmente */
-    align-items: center;      /* Centraliza os ícones verticalmente */
-}
-
-.icon {
-    width: 20px;
-    height: auto;
-    margin-top: 10px;
-}
-
-.boas-vindas {
-    font-size: 0.9rem;
+p {
+    font-size: 1rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -96,7 +84,7 @@ abbr:hover {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #ddd;
     margin-bottom: 15px;
@@ -111,7 +99,7 @@ input[type="text"] {
 button {
     width: 100%;
     padding: 12px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background-color: #1E6C93;
     color: white;
     border: none;
@@ -188,7 +176,7 @@ tr:hover {
 footer {
     background-color: #1E6C93; /* Fundo azul */
     color: white; /* Texto branco */
-    padding: 5px 0;
+    padding: 10px 0;
     text-align: center;
     width: 100%; /* Garante que o footer ocupe toda a largura */
     position: relative; /* Posiciona o footer normalmente no fluxo da página */
@@ -199,7 +187,6 @@ footer {
     text-align: center;
     color: #FFFFFF;
     margin: auto;
-    font-size: 0.9rem;
 }
 
 .redes-sociais {
