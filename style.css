@@ -40,7 +40,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
-    margin: 30px auto 20px;
+    margin: 30px auto 30px;
 }
 
 h1 {
@@ -142,7 +142,7 @@ button:hover {
 .table-container {
     width: 100%;
     overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     position: relative;
     padding-bottom: 30px; /* Dá espaço para a seta na parte inferior */
 }
