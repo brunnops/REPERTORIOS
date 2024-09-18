@@ -193,8 +193,8 @@ footer {
     width: 100%; /* Garante que o footer ocupe toda a largura */
     position: relative; /* Posiciona o footer normalmente no fluxo da página */
     margin-top: auto; /* Garante que o footer fique na parte inferior, mesmo com pouco conteúdo */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+   /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
 }
 
 .footer {
