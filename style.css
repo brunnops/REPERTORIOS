@@ -164,7 +164,7 @@ button:hover {
 .scroll-arrow-left span, .scroll-arrow-right span {
     margin-left: 5px;
     font-size: 0.75rem; /* Tamanho menor para o texto */
-    color: #555;
+    color: #fff;
 }
 
 .scroll-arrow-left:hover, .scroll-arrow-right:hover {
