@@ -131,7 +131,6 @@ button:hover {
     bottom: 10px; */
     font-size: 0.9rem;
     color: #f9f9f9;
-    animation: blink 1s infinite;
     cursor: pointer;
     margin: 0 auto;
 }
@@ -183,8 +182,8 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Responsividade */
-@media (max-width: 320px) {
+/* Responsividade
+@media (max-width: 320rem) {
     h1 {
         font-size: 1.2rem;
     }
@@ -199,8 +198,8 @@ tr:hover {
 
     th, td {
         font-size: 0.8rem;
-    }
-}
+    } 
+} */
 
 /* Footer styling */
 footer {
