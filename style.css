@@ -182,7 +182,7 @@ tr:hover {
 }
 
 /* Responsividade */
-@media (max-width: 280px) {
+@media (max-width: 320px) {
     h1 {
         font-size: 1.2rem;
     }
