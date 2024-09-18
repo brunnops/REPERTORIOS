@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* O corpo deve ter altura mínima da tela */
-    overflow-x: hidden;
 }
 
 #container {
@@ -41,7 +40,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
-    margin: 30px auto 30px;
+    margin: 30px auto 20px;
 }
 
 h1 {
@@ -60,8 +59,9 @@ h1 {
 }
 
 abbr:hover {
-    cursor: pointer;
+    cursor: pointer
 }
+
 
 .links:visited {
     color: inherit; /* Garante que a cor não mude após o clique */
@@ -105,7 +105,7 @@ input[type="text"] {
 }
 
 #searchInput {
-    color: #555555ec;
+    color: #555555ec
 }
 
 button {
@@ -124,28 +124,11 @@ button:hover {
     background-color: #12465f;
 }
 
-/* Estilo para a seta de rolagem */
-.scroll-arrow {
-    position: absolute;
-   /* right: 10px;
-    bottom: 10px; */
-    font-size: 0.9rem;
-    color: #f9f9f9;
-    cursor: pointer;
-    margin: 0 auto;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
-
+/* Contêiner da tabela com rolagem lateral */
 .table-container {
     width: 100%;
     overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
-    /* margin-bottom: 20px; */
-    position: relative;
-    padding-bottom: 30px; /* Dá espaço para a seta na parte inferior */
+    margin-bottom: 20px;
 }
 
 table {
@@ -182,8 +165,8 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Responsividade
-@media (max-width: 320rem) {
+/* Responsividade */
+@media (max-width: 280px) {
     h1 {
         font-size: 1.2rem;
     }
@@ -198,8 +181,8 @@ tr:hover {
 
     th, td {
         font-size: 0.8rem;
-    } 
-} */
+    }
+}
 
 /* Footer styling */
 footer {
@@ -219,4 +202,10 @@ footer {
     color: #FFFFFF;
     margin: auto;
     font-size: 0.8rem;
+}
+
+.redes-sociais {
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
 }
