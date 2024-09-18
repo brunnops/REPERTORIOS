@@ -67,3 +67,46 @@ $(document).ready(function() {
     window.onload = function() {
         document.getElementById("searchInput").value = ""
     };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const tableContainer = document.getElementById("table-container");
+        const scrollLeft = document.getElementById("scroll-left");
+        const scrollRight = document.getElementById("scroll-right");
+    
+    
+    // Função para atualizar a visibilidade das setas
+        function updateArrows() {
+            if (tableContainer.scrollLeft > 0) {
+                scrollLeft.style.display = "flex";
+            } else {
+                scrollLeft.style.display = "none";
+            }
+            if (tableContainer.scrollLeft + tableContainer.clientWidth < tableContainer.scrollWidth) {
+                scrollRight.style.display = "flex";
+            } else {
+                scrollRight.style.display = "none";
+            }
+        }
+    
+        // Ações ao clicar nas setas
+        scrollLeft.addEventListener("click", function () {
+            tableContainer.scrollBy({
+                left: -200, // Ajuste a quantidade de pixels para rolar
+                behavior: 'smooth'
+            });
+        });
+    
+        scrollRight.addEventListener("click", function () {
+            tableContainer.scrollBy({
+                left: 200, // Ajuste a quantidade de pixels para rolar
+                behavior: 'smooth'
+            });
+        });
+    
+        // Monitorar rolagem da tabela para atualizar as setas
+        tableContainer.addEventListener("scroll", updateArrows);
+    
+        // Inicializa as setas com a visibilidade correta
+        updateArrows();
+    });
+    

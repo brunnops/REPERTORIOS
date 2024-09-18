@@ -131,6 +131,47 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.scroll-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.scroll-arrow-left, .scroll-arrow-right {
+    display: none; /* Inicialmente invisíveis */
+    cursor: pointer;
+    color: #1E6C93; /* Cor da seta */
+    font-size: 0.8rem; /* Tamanho do texto */
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    z-index: 10;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.scroll-arrow-left {
+    left: 0;
+}
+
+.scroll-arrow-right {
+    right: 0;
+}
+
+.scroll-arrow-left span, .scroll-arrow-right span {
+    margin-left: 5px;
+    font-size: 0.75rem; /* Tamanho menor para o texto */
+    color: #555;
+}
+
+.scroll-arrow-left:hover, .scroll-arrow-right:hover {
+    background-color: #1E6C93;
+    color: white;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
