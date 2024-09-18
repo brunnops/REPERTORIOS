@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* O corpo deve ter altura mínima da tela */
+    overflow-x: hidden;
 }
 
 #container {
@@ -208,7 +209,7 @@ footer {
     padding: 5px 0;
     text-align: center;
     width: 100%; /* Garante que o footer ocupe toda a largura */
-    position: relative; /* Posiciona o footer normalmente no fluxo da página */
+    position: fixed; /* Posiciona o footer normalmente no fluxo da página */
     margin-top: auto; /* Garante que o footer fique na parte inferior, mesmo com pouco conteúdo */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
