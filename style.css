@@ -59,9 +59,8 @@ h1 {
 }
 
 abbr:hover {
-    cursor: pointer
+    cursor: pointer;
 }
-
 
 .links:visited {
     color: inherit; /* Garante que a cor não mude após o clique */
@@ -105,7 +104,7 @@ input[type="text"] {
 }
 
 #searchInput {
-    color: #555555ec
+    color: #555555ec;
 }
 
 button {
@@ -124,11 +123,28 @@ button:hover {
     background-color: #12465f;
 }
 
-/* Contêiner da tabela com rolagem lateral */
+/* Estilo para a seta de rolagem */
+.scroll-arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 24px;
+    color: #1E6C93;
+    animation: blink 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
 .table-container {
     width: 100%;
     overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
     margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 30px; /* Dá espaço para a seta na parte inferior */
 }
 
 table {
@@ -193,8 +209,8 @@ footer {
     width: 100%; /* Garante que o footer ocupe toda a largura */
     position: relative; /* Posiciona o footer normalmente no fluxo da página */
     margin-top: auto; /* Garante que o footer fique na parte inferior, mesmo com pouco conteúdo */
-   /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .footer {
@@ -202,10 +218,4 @@ footer {
     color: #FFFFFF;
     margin: auto;
     font-size: 0.8rem;
-}
-
-.redes-sociais {
-    text-align: center;
-    color: #FFFFFF;
-    margin: auto;
 }
