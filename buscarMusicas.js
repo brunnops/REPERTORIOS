@@ -62,6 +62,7 @@ $(document).ready(function() {
     });
 });
 
+
     // Limpa o campo de pesquisa quando a página é carregada
     window.onload = function() {
         document.getElementById("searchInput").value = ""
