@@ -129,7 +129,7 @@ button:hover {
    /* right: 10px;
     bottom: 10px; */
     font-size: 0.9rem;
-    color: #93b5c6;
+    color: #f9f9f9;
     animation: blink 1s infinite;
     cursor: pointer;
     margin: 0 auto;
