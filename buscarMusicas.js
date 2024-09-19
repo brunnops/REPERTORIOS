@@ -73,8 +73,7 @@ $(document).ready(function() {
         const scrollLeft = document.getElementById("scroll-left");
         const scrollRight = document.getElementById("scroll-right");
     
-    
-    // Função para atualizar a visibilidade das setas
+        // Função para atualizar a visibilidade das setas
         function updateArrows() {
             if (tableContainer.scrollLeft > 0) {
                 scrollLeft.style.display = "flex";
@@ -108,5 +107,9 @@ $(document).ready(function() {
     
         // Inicializa as setas com a visibilidade correta
         updateArrows();
+    
+        // Força a atualização da visibilidade das setas ao carregar a página
+        setTimeout(updateArrows, 100);
     });
+    
     

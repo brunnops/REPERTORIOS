@@ -124,13 +124,6 @@ button:hover {
     background-color: #12465f;
 }
 
-/* Contêiner da tabela com rolagem lateral */
-.table-container {
-    width: 100%;
-    overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
-    margin-bottom: 20px;
-}
-
 .scroll-container {
     position: relative;
     width: 100%;
@@ -141,35 +134,43 @@ button:hover {
 .scroll-arrow-left, .scroll-arrow-right {
     display: none; /* Inicialmente invisíveis */
     cursor: pointer;
-    color: #1E6C93; /* Cor da seta */
-    font-size: 0.8rem; /* Tamanho do texto */
+    color: #1E6C93;
+    font-size: 1.2rem; /* Aumenta um pouco o tamanho da seta */
     font-weight: bold;
     position: absolute;
-    top: -25px;
+    top: -25px; /* Posiciona as setas logo acima da tabela */
     z-index: 10;
     background: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    align-items: center;
 }
 
 .scroll-arrow-left {
-    left: 0;
+    left: 10px; /* Ajusta para posicionar a seta à esquerda */
 }
 
 .scroll-arrow-right {
-    right: 0;
+    right: 10px; /* Ajusta para posicionar a seta à direita */
 }
 
 .scroll-arrow-left span, .scroll-arrow-right span {
     margin-left: 5px;
-    font-size: 0.75rem; /* Tamanho menor para o texto */
+    font-size: 0.75rem;
     color: #555;
 }
 
 .scroll-arrow-left:hover, .scroll-arrow-right:hover {
     background-color: #1E6C93;
     color: white;
+}
+
+/* Contêiner da tabela com rolagem lateral */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
+    margin-bottom: 20px;
 }
 
 table {
