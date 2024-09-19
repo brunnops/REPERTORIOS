@@ -68,48 +68,46 @@ $(document).ready(function() {
         document.getElementById("searchInput").value = ""
     };
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const tableContainer = document.getElementById("table-container");
-        const scrollLeft = document.getElementById("scroll-left");
-        const scrollRight = document.getElementById("scroll-right");
+    document.addEventListener('DOMContentLoaded', function () {
+        const tableContainer = document.getElementById('table-container');
+        const scrollRight = document.getElementById('scroll-right');
+        const scrollLeft = document.getElementById('scroll-left');
     
-        // Função para atualizar a visibilidade das setas
-        function updateArrows() {
-            if (tableContainer.scrollLeft > 0) {
-                scrollLeft.style.display = "flex";
+        function checkScroll() {
+            // Verifica se a tabela tem rolagem lateral
+            if (tableContainer.scrollWidth > tableContainer.clientWidth) {
+                scrollRight.style.display = 'inline';
             } else {
-                scrollLeft.style.display = "none";
-            }
-            if (tableContainer.scrollLeft + tableContainer.clientWidth < tableContainer.scrollWidth) {
-                scrollRight.style.display = "flex";
-            } else {
-                scrollRight.style.display = "none";
+                scrollRight.style.display = 'none';
             }
         }
     
-        // Ações ao clicar nas setas
-        scrollLeft.addEventListener("click", function () {
-            tableContainer.scrollBy({
-                left: -200, // Ajuste a quantidade de pixels para rolar
-                behavior: 'smooth'
-            });
+        // Verifica a rolagem lateral
+        tableContainer.addEventListener('scroll', function () {
+            if (tableContainer.scrollLeft > 0) {
+                scrollLeft.style.display = 'inline';
+            } else {
+                scrollLeft.style.display = 'none';
+            }
+    
+            if (tableContainer.scrollLeft + tableContainer.clientWidth >= tableContainer.scrollWidth) {
+                scrollRight.style.display = 'none';
+            } else {
+                scrollRight.style.display = 'inline';
+            }
         });
     
-        scrollRight.addEventListener("click", function () {
-            tableContainer.scrollBy({
-                left: 200, // Ajuste a quantidade de pixels para rolar
-                behavior: 'smooth'
-            });
+        // Função para rolar a tabela
+        scrollRight.addEventListener('click', function () {
+            tableContainer.scrollBy({ left: 100, behavior: 'smooth' });
         });
     
-        // Monitorar rolagem da tabela para atualizar as setas
-        tableContainer.addEventListener("scroll", updateArrows);
+        scrollLeft.addEventListener('click', function () {
+            tableContainer.scrollBy({ left: -100, behavior: 'smooth' });
+        });
     
-        // Inicializa as setas com a visibilidade correta
-        updateArrows();
-    
-        // Força a atualização da visibilidade das setas ao carregar a página
-        setTimeout(updateArrows, 100);
+        // Verifica se há rolagem ao carregar a página
+        checkScroll();
+        window.addEventListener('resize', checkScroll);
     });
-    
     

@@ -124,47 +124,21 @@ button:hover {
     background-color: #12465f;
 }
 
-.scroll-container {
-    position: relative;
-    width: 100%;
+#arrow-container {
     text-align: center;
     margin-bottom: 10px;
-}
-
-.scroll-arrow-left, .scroll-arrow-right {
-    display: none; /* Inicialmente invisíveis */
+  }
+  
+  #scroll-right, #scroll-left {
     cursor: pointer;
-    color: #93911e;
-    font-size: 1.2rem; /* Aumenta um pouco o tamanho da seta */
-    font-weight: bold;
-    position: absolute;
-    top: -25px; /* Posiciona as setas logo acima da tabela */
-    z-index: 10;
-    background: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    align-items: center;
-}
-
-.scroll-arrow-left {
-    left: 10px; /* Ajusta para posicionar a seta à esquerda */
-}
-
-.scroll-arrow-right {
-    right: 10px; /* Ajusta para posicionar a seta à direita */
-}
-
-.scroll-arrow-left span, .scroll-arrow-right span {
-    margin-left: 5px;
-    font-size: 0.75rem;
-    color: white;
-}
-
-.scroll-arrow-left:hover, .scroll-arrow-right:hover {
-    background-color: #931e31;
-    color: white;
-}
+    font-size: 0.9rem;
+    color: #1E6C93;
+  }
+  
+  #scroll-right:hover, #scroll-left:hover {
+    text-decoration: underline;
+  }
+  
 
 /* Contêiner da tabela com rolagem lateral */
 .table-container {
