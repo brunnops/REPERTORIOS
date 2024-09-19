@@ -124,22 +124,6 @@ button:hover {
     background-color: #12465f;
 }
 
-#arrow-container {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  #scroll-right, #scroll-left {
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: #1E6C93;
-  }
-  
-  #scroll-right:hover, #scroll-left:hover {
-    text-decoration: underline;
-  }
-  
-
 /* Contêiner da tabela com rolagem lateral */
 .table-container {
     width: 100%;
