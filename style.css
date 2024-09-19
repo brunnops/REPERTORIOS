@@ -134,7 +134,7 @@ button:hover {
 .scroll-arrow-left, .scroll-arrow-right {
     display: none; /* Inicialmente invisíveis */
     cursor: pointer;
-    color: #1E6C93;
+    color: #93911e;
     font-size: 1.2rem; /* Aumenta um pouco o tamanho da seta */
     font-weight: bold;
     position: absolute;
@@ -158,11 +158,11 @@ button:hover {
 .scroll-arrow-left span, .scroll-arrow-right span {
     margin-left: 5px;
     font-size: 0.75rem;
-    color: #555;
+    color: white;
 }
 
 .scroll-arrow-left:hover, .scroll-arrow-right:hover {
-    background-color: #1E6C93;
+    background-color: #931e31;
     color: white;
 }
 
