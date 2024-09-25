@@ -126,29 +126,10 @@ button:hover {
 
 /* Contêiner da tabela com rolagem lateral */
 .table-container {
-    position: relative;
     width: 100%;
     overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
     margin-bottom: 20px;
 }
-
-/* Seta de rolagem antes da tabela */
-.scroll-indicator {
-    font-size: 20px;
-    color: white;
-    opacity: 0.5;
-    text-align: right; /* Alinha a seta à direita */
-    margin-bottom: 5px; /* Espaçamento entre a seta e a tabela */
-    display: none; /* Inicialmente oculto */
-}
-
-/* Mostrar a seta somente em telas menores */
-@media (max-width: 768px) {
-    .scroll-indicator {
-        display: block;
-    }
-}
-
 
 table {
     width: 100%;

@@ -67,33 +67,3 @@ $(document).ready(function() {
     window.onload = function() {
         document.getElementById("searchInput").value = ""
     };
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const tableContainer = document.querySelector('.table-container');
-        const scrollIndicator = document.querySelector('.scroll-indicator');
-    
-        // Verifica se a tabela tem rolagem lateral
-        function checkScroll() {
-            if (tableContainer.scrollWidth > tableContainer.clientWidth) {
-                scrollIndicator.style.display = 'block';
-            } else {
-                scrollIndicator.style.display = 'none';
-            }
-        }
-    
-        // Verifica a rolagem inicial
-        checkScroll();
-    
-        // Remove a seta se o usuário rolar a tabela
-        tableContainer.addEventListener('scroll', function() {
-            if (tableContainer.scrollLeft > 0) {
-                scrollIndicator.style.display = 'none';
-            } else {
-                checkScroll();
-            }
-        });
-    
-        // Revalida a rolagem ao redimensionar a tela
-        window.addEventListener('resize', checkScroll);
-    });
-    
