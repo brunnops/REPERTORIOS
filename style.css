@@ -135,6 +135,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.8rem;
+    border-radius: 8px; /* Arredonda as bordas da tabela */
+    overflow: hidden; /* Garante que o arredondamento seja aplicado de forma correta */
 }
 
 th, td {
