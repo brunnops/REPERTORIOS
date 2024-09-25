@@ -132,15 +132,13 @@ button:hover {
     margin-bottom: 20px;
 }
 
+/* Seta de rolagem antes da tabela */
 .scroll-indicator {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 20px;
     color: white;
     opacity: 0.5;
-    pointer-events: none; /* Não permite interação com a seta */
+    text-align: right; /* Alinha a seta à direita */
+    margin-bottom: 5px; /* Espaçamento entre a seta e a tabela */
     display: none; /* Inicialmente oculto */
 }
 
@@ -150,6 +148,7 @@ button:hover {
         display: block;
     }
 }
+
 
 table {
     width: 100%;
