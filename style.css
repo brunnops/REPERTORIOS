@@ -126,9 +126,29 @@ button:hover {
 
 /* Contêiner da tabela com rolagem lateral */
 .table-container {
+    position: relative;
     width: 100%;
     overflow-x: auto; /* Habilita rolagem lateral apenas na tabela */
     margin-bottom: 20px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    opacity: 0.5;
+    pointer-events: none; /* Não permite interação com a seta */
+    display: none; /* Inicialmente oculto */
+}
+
+/* Mostrar a seta somente em telas menores */
+@media (max-width: 768px) {
+    .scroll-indicator {
+        display: block;
+    }
 }
 
 table {
